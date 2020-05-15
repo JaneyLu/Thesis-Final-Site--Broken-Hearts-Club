@@ -1,0 +1,281 @@
+
+.background {
+  position: fixed;
+  background-color:#FFFAF2;
+  top: -18%;
+  left: 11%;
+  width: 130%;
+  height: 140%;
+}
+
+.header{
+    position: fixed;
+    display: inline;
+    text-align: right;
+    margin-left: 89%;
+}
+
+
+
+/* 1. Intro Keyframe & text styles
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 24%;
+  left: 2%;
+  width: 80%;
+  color: #E56B58;
+  text-align: left;
+  /*text-transform:uppercase;*/
+}
+
+#about{
+  font-size: 170px;
+  position: fixed;
+  top: -20%;
+  left: %;
+  width: 100%;
+  color: #E56B58;
+  text-align: left;
+  /*text-transform:uppercase;*/ 
+}
+
+#aboutpage{
+    height: 1000px;
+}
+
+.wrapper {
+  display: none;
+}
+
+.name {
+  font-size: 200px;
+  letter-spacing: 0px;
+  line-height: .8;
+  font-weight: 100;
+  font-family: 'Optima', sans-serif;
+}
+
+#byline{
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 45%;
+  font-size: 23pt;
+  font-weight: 300;
+  font-family: ibm-plex-mono, sans-serif;
+  font-style: italic;
+  z-index: 10000;
+  letter-spacing: 1pt;
+  color: #E56B58;
+}
+
+.smalltext {
+  position: absolute;
+  font-size: 13pt;
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  color:#b5b5b5;
+  width: 28%;
+  margin-left: 67%;
+  margin-top: 30%;
+  line-height: 26pt;
+  letter-spacing: 1px
+}
+
+.aboutstories{
+    font-size: 81px; 
+    line-height: 84px;
+    font-style: italic;
+    margin-bottom: 80px;
+    color:#fad4c0;
+    max-width: 70%;
+    left: 2%;
+    top: 20%;
+    position: fixed;
+}
+
+.aboutbody{
+    height: 100vh;
+    width: 100vw;
+}
+
+.whiteopaque{
+    position: fixed;
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    opacity: .5;
+    z-index: 10;
+    
+}
+
+/* 2. story 1 position & disappearance
+--------------------------------------- */
+#explosion{
+  top: 10%;
+  width: 75%;
+  height: 100%;
+  margin-left: -22%;
+  color:#FEE7D2; 
+}
+
+.explosion-byline{
+  display: inline;
+  position: relative;
+  letter-spacing: .2pt;
+  top: 100%;
+  left: 35%;
+  opacity: 0; 
+  line-height: 90px;
+  color:#FEE7D2;
+  max-width: 55%;
+  font-size: 80px;
+}
+
+
+/* 3. cover image hover effect
+--------------------------------------- */
+.pointer {cursor: url("../img/cursor-redheart.png") , auto !important;}
+
+.hover-title {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.hover-image {
+    visibility: hidden;
+}
+
+.hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: visible;
+}
+
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+/* 5. content text styles*/
+.stories{
+    font-size: 45px; 
+    line-height: 65px;
+    margin-bottom: 80px;
+    color:#615f5b;
+    max-width: 70%;
+    left: 16%;
+    position: relative;
+    z-index: 100000;
+}
+
+
+#img {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  text-rendering: optimizeLegibility;
+}
+
+.image-wrap{
+  position: fixed;
+  top: -20%;
+  left: 15%;
+  width: 80%;
+  height: 100%; 
+}
+
+/*-----exhibit 3 position fix------*/
+.bombay{
+    top: 25%;
+    left:14%;
+    width: 500pt;
+    height: auto;
+    opacity: 40%;
+}
+“” ’
+/*--------- 7. top bar progress scroll ----------*/
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 5s linear;
+  z-index: 100;
+}
+
+@keyframes progress {
+  to {
+    background-color: #E56B58;
+    width: 130%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+#fading {
+	position: absolute;
+}
+
+#fading2 {
+	position: absolute;
+}
+
+#fading3 {
+	position: absolute;
+}
+
+#fading4 {
+	position: absolute;
+}
+
+#fading5 {
+	position: absolute;
+}
+
+#fading6 {
+	position: absolute;
+}
+
+#fading7 {
+	position: absolute;
+}
+
+#fading8 {
+	position: absolute;
+}
+
+
+
+
+
+
